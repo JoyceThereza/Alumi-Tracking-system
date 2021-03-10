@@ -15,8 +15,7 @@ body{
 	--color-primary:orange;
 	--color-primary-dark:#08007f;
 	--color-secondary:lightgray;
-	--color-error:#cc3333;
-	--color-success:#4bb544;
+	
 	--border-radius:30px;
 }
 .logo 
@@ -26,7 +25,7 @@ justify-self: start;
 width: 200px;
 height: 150px;
 margin-bottom: 10px;
-border-radius: 20px;
+
 }
 .big-one 
 {
@@ -48,18 +47,15 @@ border-radius: 20px;
 	width: 400px;
 	max-width: 400px;
 	margin: auto;
-	
 	padding: 2rem;
-	box-shadow: 0 0 70px rgba(0,0,0,0.2);
+	box-shadow: 5px 5px 70px rgba(15, 15, 15, 0.2);
 	background: white;
 	border-radius: 10px ;
 }
-.container,
-.form-input,
-.form-button 
+.form-title
 {
 	font: 500rem ;
-	/* font-family:'Abril Fatface', cursive; */
+	font-family:'Abril Fatface', cursive;
 }
 .form-title{
 	margin-bottom: 2rem;
@@ -72,16 +68,7 @@ border-radius: 20px;
 .form > *:last-child{
 	margin-bottom: 0;
 }
-.form-message {
-	text-align: center;
-	margin-bottom: 1rem;
-}
-.form-message-success{
-	color: var(--color-success);
-}
-.form-message-error{
-	color: var(--color-error);
-}
+
 .form-input-group{
 	margin-bottom: 1rem;
 
@@ -89,7 +76,7 @@ border-radius: 20px;
 .form-input{
 	display: block;
 	width: 100%;
-	padding: 0.75rem;
+	padding: 10px 20px;
 	box-sizing: border-box;
 	border-radius: var(--border-radius);
 	border: 1px solid #dddddd;
@@ -98,18 +85,9 @@ border-radius: 20px;
 	outline: none;
 }
 .form-input:focus{
-	border-color: #009579;
 	background: #ffffff;
+	border: 2px gray;
 
-}
-.form-input-error{
-	color: var(--color-error);
-	border: var(--color-error);
-}
-.form-input-error-message{
-	color: var(--color-error);
-	margin-top: 0.5rem;
-	font-size: 0.85rem;
 }
 .form-button{
 	width: 100%;
@@ -122,13 +100,13 @@ border-radius: 20px;
 	font-size: 1.2rem;
 	border: none;
 	border-radius: 30px;
+	margin-top: 1rem;
 }
-.form-button:hover{
-	background: var(--color-secondary);
+.form-button:hover{ 
 	outline:none;
 }
 .form-button:active{
-	transform:scale(0.8);
+	transform:scale(0.7);
 }
 .form-text {
 	text-align: center;
@@ -145,6 +123,6 @@ border-radius: 20px;
 	text-decoration: underline;
 }
 .forgotpass {
-	margin-top: 1rem;
+	margin-top: 0.75rem;
 	margin-left: 1rem;
 }

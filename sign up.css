@@ -17,7 +17,6 @@ justify-self: start;
 width: 200px;
 height: 150px;
 margin-bottom: 20px;
-border-radius: 20px;
 }
 .form-space 
 {
@@ -28,7 +27,7 @@ border-radius: 20px;
     margin-left: 50px;
     margin-right: 50px;
     width: 1000px;
-    height: 600px;
+    height: 650px;
     margin: auto;
     padding-top: 30px;
 
@@ -52,9 +51,9 @@ border-radius: 20px;
     margin: auto;
     padding: 40px 40px;
     border-radius: 30px;
-    box-shadow: 5px 5px 10px rgb(153, 111, 4);
+    box-shadow: 5px 5px 10px rgb(25, 26, 25);
     max-width:  600px;
-    max-height: 500px;
+    max-height: 600px;
   
 }
 
@@ -69,33 +68,26 @@ border-radius: 20px;
 	background:white;
 	transition: background 0.2s, border-color 0.2s;
 	outline: none;
-  
-    
 }
-/* .registration-form .item:focus{
-    border-color: #009579;
-	background: #ffffff;
-} */
+#register-btn
+{
+    width: 100%;
+	padding: 1rem 2rem;
+	font-weight: bold;
+	color:white;
+	outline: none;
+	cursor: pointer;
+	background: gray;
+	font-size: 1.2rem;
+	border: none;
+	border-radius: 30px;
+	margin-top: 1rem;
+}
+#register-btn:active
+{
+    transform:scale(0.7);
+}
 
-
-.registration-form .create-account{
-    border-radius: 30px;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: gray;
-    border: none;
-    color: white;
-    margin-top: 20px;
-   
-}
-.registration-form .create-account:active{
-    transform:scale(0.8);
-   
-}.registration-form .create-account:hover{
-background: lightgray;
-color: black;
-}
 
 @media (max-width: 576px) {
     .registration-form form{

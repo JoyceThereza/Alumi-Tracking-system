@@ -13,27 +13,23 @@
   
 </head>
 <body>
+    <img src="Code Queen Logo.png" alt="Code Queen Logo" class="logo">
 
-<div class="container">  
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">
-          <img src="Code Queen Logo.png" alt="Code Queenlogo" style="width:100px;">
-        </a>
+<div class="container"> 
+    <div class="heading">
+        <a href="home.html" class="btn btn-secondary" role="button"> Logout</a>
+        <a href="connect.html" class="btn btn-secondary" role="button"> Connect</a>
+        <a href="studentlist.html" class="btn btn-secondary" role="button"> Students'List</a>
+        <a href="sign up.html" class="btn btn-secondary" role="button"> Edit Details </a>
         
-        <!-- Links -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Connect</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="home.html">Logout</a>
-          </li>
-        </ul>
-    </nav>
-    
-    <div> <img src="IMG_20200830_171658_465.jpg" class="rounded-circle mx-auto d-block" style="width:25%" alt="profile-photo" width="304" height="236"> </div>
-    <div class="box-text">
+   
+        <div class="student-details">
+            <div class="profile-photo">
+                <label for="fileField"> <img src="./IMG_20200830_171658_465.jpg" 
+                alt="profile-photo" style="width: 150px; padding: 10px; border-radius: 15px;"> </label>
+                <input type="file" name="file" id="fileField" accept="image/*" style="display: none;">
+            </div>
+            <div class="box-text">
                 <h3>Joyce Thereza Akite</h3>
                 <p><b>Email:</b> joyceakite1@gmail.com</p>
                 <p><b>Age:</b> 27</p>
@@ -41,14 +37,12 @@
                 <p><b>Recruitment date:</b> 14/09/2020</p>
                 <p><b>Facilitator:</b> Joyce Sandra Atim</p>
                 <p><b>Availability status:</b> Looking for work</p>
-                <p><b>Results/progress:</b>....</p>
-                <p><b>Upload CV or add linkedin:</b> </p>
-                   
-                <td>
-                    <a href="registrationform.html" class="btn btn-secondary" role="button"> Edit Details </a>
-                </td>
-                        
-    </div>
+                <div>
+                    <a href="./progress.html">Resuts/Progresss</a>   
+                </div>
+                 
+            </div>       
+        </div>
     </div>
 </div>   
 </body>

@@ -64,6 +64,9 @@
 	else
 	{				                            
 		   alert("Thank You for signing up");
+		   // Redirecting to the studentprofile page. 
+		   window.location = "studentprofile.html"; 
+	
 	}
 
 	}

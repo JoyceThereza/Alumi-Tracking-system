@@ -1,0 +1,102 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(179, 172, 116, 0.8)),url("code queen.jpg");
+	padding: relative;
+	position: relative;
+	backdrop-filter: 20px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+ 
+    
+}
+.logo 
+{
+display: flex;
+justify-self: start;
+width: 200px;
+height: 150px;
+margin-bottom: 10px;
+border-radius: 20px;
+}
+
+.marginBox {
+    width: 1200px;
+    height: 800px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+#myInput {
+    background-image: url(''); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 50%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    border-radius: 15px;
+    margin-bottom: 12px; /* Add some space below the input */
+    margin-left: 15px;
+  }
+  
+  #myTable {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+  }
+
+  
+
+.on-board-form{
+    background-color: rgb(255, 174, 0);
+    height: 90%;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 3rem;
+    padding-left: 3rem;
+}
+.on-board-form a {
+    background: darkgray;
+    float: right;
+    margin-left: 10px;
+}
+
+.tableRows a {
+    background:darkgray;
+    float: right;
+}
+
+.table-title{
+    background-color: white;
+    margin:  20px;
+    text-align: center;
+    
+    
+}
+
+.table-title h3 {
+    color: black;
+    font-family: "Robboto", sans-serif;
+    font-weight: bold;
+    padding-top: 0.75rem;
+}
+
+.tableHead {
+    background-color:darkgray;
+    color: white;
+    text-align: center;
+}
+
+.tableRows {
+    text-align: center;
+}
+
+.table-details{
+    width: 1000px;
+    height: 450px;
+    background-color:white;
+    border-radius: 20px;
+    margin-top: 5rem;
+
+}
