@@ -69,28 +69,31 @@
 	
 	}
 
+	const form = document.getElementById("signupform")
+
+	form.addEventListener("submit", function (e){
+		e.preventDefault()
+	});
+
+	const formData = new FormData(this);
+	
+	fetch ("https://localhost:3000/signup",{
+		method: "POST",
+		body:JSON.stringify({
+			body:formData,
+		}),
+		headers:{
+			"Content-Type": "application/json"
+		}
+		  .then (function(response){
+			  return response.json()
+		  })
+		  .then(function(data){
+			  console.log(data)       
+			})
+	 
+	
+	})
+
 	}
 	 	
-function clearinputfields()
-{
-	document.getElementById("firstname").value==="";
-	document.getElementById("lastname").value==="";
-	document.getElementById("email").value==="";
-	document.getElementById("password").value==="";
-	document.getElementById("confirm password").value==="";
-}
- 
-/* const registerBtn = document.getElementById("register-btn");
- 
-
-  const Url = "http://localhost:3000/signup"
-  const response = await fetch(Url, {
-            method: "POST",
-            body: JSON.stringify(register),
-            headers: {
-                "Content-Type": "application/json",
-            },
- });
- registerBtn.addEventListener("click", async() => {
-	clearinputfields()
- }); */

@@ -17,4 +17,26 @@ function sendlink()
     {				                            
         alert("An email will be sent to you shortly!");
     }
+
+   const form =document.getElementById("myform")
+    
+   form.addEventListener("submit",function(e){
+       e.preventDefault()
+   })
+    
+   fetch("https://localhost:3000/forgotpass",{
+    method: "POST",
+    body:JSON.stringify({
+        body:Email,
+    })
+      .then (function(response){
+          return response.json()
+      })
+      .then(function(data){
+          console.log(data)       
+        })
+ 
+   })
+
+
 }

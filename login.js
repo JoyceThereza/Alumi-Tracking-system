@@ -1,7 +1,9 @@
 function validateform()
 {
- const userName = document.getElementById("loginUsername").value;
- const password = document.getElementById("security").value;
+	
+ 
+	const userName = document.getElementById("loginUsername").value;
+    const password = document.getElementById("security").value;
 
  let password_expression = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
  let letters = /^[A-Za-z]+$/;
@@ -34,5 +36,32 @@ function validateform()
 		   // Redirecting to the studentprofile page. 
 		   window.location = "studentprofile.html"; 
 	}
+
+	const form =document.getElementById("loginform")
+
+	form.addEventListener("submit", function (e){
+		e.preventDefault()
+	});
+
+	const formData = new FormData(this)
+	
+	fetch ("https://jsonplaceholder.typicode.com/posts",{
+		method: "POST",
+		body:JSON.stringify({
+			body:formData,
+		}),
+		headers:{
+			"Content-Type": "application/json"
+		}
+		  .then (function(response){
+			  return response.json()
+		  })
+		  .then(function(data){
+			  console.log(data)       
+			})
+	 
+	
+	})
 } 
+
 

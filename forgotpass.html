@@ -14,11 +14,13 @@
     <div class="cover">
         <h1 class="title">Forgot your Password?</h1>
         <div class="container"> 
-            <input type="email" id="email"autofocus placeholder="Enter your email">                     
-            <div class="buttons">
-                <a href="./login.html"><button class="back" type="button">Back</button></a>
-                <button class="submit" type="button" onclick="sendlink()">Submit</button>
-            </div>
+            <form id="myform" method="POST"> 
+                    <input type="email" id="email"autofocus placeholder="Enter your email">                     
+                <div class="buttons">
+                    <a href="./login.html"><button class="back" type="button">Back</button></a>
+                    <button class="submit" type="button" onclick="sendlink()">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
     <script src="forgotpass.js"></script>
