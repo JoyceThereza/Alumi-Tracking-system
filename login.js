@@ -37,7 +37,7 @@ function validateform()
 		   window.location = "studentprofile.html"; 
 	}
 
-	const form =document.getElementById("loginform")
+	/* const form =document.getElementById("loginform")
 
 	form.addEventListener("submit", function (e){
 		e.preventDefault()
@@ -61,7 +61,7 @@ function validateform()
 			})
 	 
 	
-	})
+	}) */
 } 
 
 
